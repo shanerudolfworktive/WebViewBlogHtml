@@ -4,11 +4,11 @@
     <span id="msgId"></span>
     <script>
         function getOSVersion(){
-            if (window.webkit){
-                window.webkit.messageHandlers.iosApp.postMessage('Hello, this message is from WebView');
-            }else {
+            // if (window.webkit){
+            //     window.webkit.messageHandlers.iosApp.postMessage('Hello, this message is from WebView');
+            // }else {
                 AndroidApp.getOSVersion('Hello, this message is from WebView');
-            }
+            // }
         }
     
         function renderOSVersion(message){
