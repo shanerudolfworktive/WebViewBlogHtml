@@ -1,7 +1,6 @@
 <!DOCTYPE >
 <html>
-    <input value="my identity" type="button" onclick='invokeNative({ "functionName":"identity", "name":"Shane", "age":30 })' />
-    <input value="my job" type="button" onclick='invokeNative({ "functionName":"workforce", "title":"Mobile Dev"})' />
+    <input value="my identity" type="button" onclick='invokeNative("Hello from JS")' />
     <span id="renderId"></span>
     <script>
         function invokeNative(paramJSON){
@@ -12,8 +11,8 @@
             }
         }
     
-    function render(message){
-        document.getElementById("renderId").textContent=message;
-    }
+	    function render(message){
+	        document.getElementById("renderId").textContent=message;
+	    }
     </script>
 </html>
